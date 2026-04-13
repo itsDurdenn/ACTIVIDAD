@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriApp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .divider {
+            border: 0;
+            height: 1px;
+            background-color: #cccccc;
+            margin: 1.5rem 0; 
+        }
+    </style>
+</head>
+
+<body class="container-md bg-info-subtle">
+    <div class=" bg-success">
+        <h1 class="text-center font-Aria">{% block titulo %}{% endblock titulo %}</h1>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-danger-subtle">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="/">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Herramientas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/tmb">Calculadora TMB</a></li>
+                            <li><a class="dropdown-item" href="/imc">Calculadora IMC</a></li>
+                            <li><a class="dropdown-item" href="/gct">Calculadora GCT</a></li>
+                            <li><a class="dropdown-item" href="/pci">Calculadora PCI</a></li>
+                            <li><a class="dropdown-item" href="/m">Calculadora Macronutrientes</a></li>
+                            <li><a class="dropdown-item" href="/analizador">Analizador</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Educacion Nutricional
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/articulos">Articulos Educativos</a></li>
+                            <li><a class="dropdown-item" href="/ejercicios">Rutinas de Ejercicios</a></li>
+                            <li><a class="dropdown-item" href="/banco">Banco de Recetas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Perfil
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/registro">Registrarse</a></li>
+                            <li><a class="dropdown-item" href="/sesion">Iniciar sesion</a></li>
+                            <li><a class="dropdown-item" href="/politicas">politicas</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/perfil">Perfil</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<h4 class="text-center">Pagina de Nutricion</h4>
+
+<section>
+{%block contenido%} 
+{%endblock %}
+</section>
+
+<hr class="divider bg-dark">
+
+<h5 class="text-center">Tu aliado digital para una vida más saludable</h5>
+    <p>
+        En NutriApp te ayudamos a alcanzar tus metas de bienestar de forma fácil y personalizada. Descubre planes de
+        alimentación adaptados a tus necesidades, lleva un control de tus hábitos diarios y aprende a nutrirte mejor con
+        herramientas basadas en ciencia y tecnología.
+
+        Ya sea que busques bajar de peso, ganar masa muscular o simplemente comer mejor, en NutriApp encontrarás todo lo
+        que necesitas para cuidar tu salud y sentirte bien cada día.
+
+        Empieza hoy mismo y transforma tu nutrición con inteligencia. 🌿
+    </p>
+<h6>¿Que puedes encontrar?</h6>
+<ul>
+    <li>Calculadoras</li>
+    <li>Articulos Educativos</li>
+    <li>Recursos Descargables</li>
+    <li>Banco de Recetas Saludables</li>
+</ul>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

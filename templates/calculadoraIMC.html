@@ -1,0 +1,52 @@
+{% extends "Base.html" %} 
+
+{% block contenido %}
+
+<h1 class="text-center">Calculadora IMC</h1>
+
+<h6>¿Qué hace?</h6>
+<p>Mide la relación entre tu peso y tu estatura para dar una idea general de si tu peso está dentro de un rango considerado saludable.</p>
+
+<h6>Fórmula:</h6>
+<p>IMC = peso (kg) / (estatura (m))^2</p>
+
+<h6>Ejemplo:</h6>
+<ol>
+    <li>Peso = 70 kg</li>
+    <li>Estatura = 1.70 m</li>
+    <li>IMC = 70 / (1.70 × 1.70) = 24.22</li>
+</ol>
+
+<h6>Notas:</h6>
+<ul>
+    <li>No es adecuado para niños, ancianos o mujeres embarazadas.</li>
+    <li>Es una estimación; no distingue entre músculo y grasa.</li>
+    <li>Se usa para clasificar en rangos: bajo peso, normal, sobrepeso, obesidad.</li>
+</ul>
+
+{% with messages = get_flashed_messages(with_categories=true) %} {% for
+category, msg in messages %}
+<div style="color: red">{{ msg }}</div>
+{% endfor %} {% endwith %} {% if resultado %}
+<p><strong>Resultado:</strong> {{ resultado }}</p>
+{% endif %}
+
+<form method="post" action="{{ url_for('imc') }}">
+    <label>Peso (kg):</label><br />
+    <input
+    type="text"
+    name="peso"
+    value="{{ form.peso if form else '' }}"
+    /><br /><br />
+
+    <label>Altura (cm o m):</label><br />
+    <input
+    type="text"
+    name="altura"
+    value="{{ form.altura if form else '' }}"
+    /><br /><br />
+
+    <button type="submit">Calcular IMC</button>
+</form>
+
+{% endblock contenido %}
