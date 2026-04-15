@@ -1,1 +1,0 @@
-print(pymongo.__version__)
