@@ -52,7 +52,40 @@
     </div>
 
 <div class="container-md">
-    <h4 class="text-center">Tareas</h4>
+    <h4 class="text-center">Tareas de Usuario</h4>
+
+    <div class="table-responsive mb-4">
+        <table class="table table-bordered table-hover">
+            <thead class="table-light">
+                <tr>
+                    <th>Tarea</th>
+                    <th>Descripción</th>
+                    <th>Fecha límite</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Revisar tareas</td>
+                    <td>Verificar el avance de las tareas pendientes</td>
+                    <td>2026-04-23</td>
+                    <td><span class="badge bg-warning text-dark">En progreso</span></td>
+                </tr>
+                <tr>
+                    <td>Enviar informe</td>
+                    <td>Preparar y enviar el reporte semanal</td>
+                    <td>2026-04-25</td>
+                    <td><span class="badge bg-success">Completado</span></td>
+                </tr>
+                <tr>
+                    <td>Agregar nueva tarea</td>
+                    <td>Crear registro de tarea en el gestor</td>
+                    <td>2026-04-26</td>
+                    <td><span class="badge bg-secondary">Pendiente</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <section>
         {%block contenido%} 
