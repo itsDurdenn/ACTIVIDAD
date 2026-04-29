@@ -196,7 +196,7 @@ def ejemplo_uso():
     gestor = GestorTareas()
     
     # Crear usuario
-    usuario_id = gestor.crear_usuario("Angel Diaz", "angel@email.com")
+    usuario_id = gestor.crear_usuario("24308060610640", "angel@email.com")
     print(f"Usuario creado con ID: {usuario_id}")
     
     if usuario_id:
