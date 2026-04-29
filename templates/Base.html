@@ -54,50 +54,90 @@
 <div class="container-md">
     <h4 class="text-center">Tareas de Usuario</h4>
 
-    <div class="table-responsive mb-4">
-        <table class="table table-bordered table-hover">
-            <thead class="table-light">
-                <tr>
-                    <th>Tarea</th>
-                    <th>Descripción</th>
-                    <th>Fecha límite</th>
-                    <th>Estado</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Matematicas</td>
-                    <td>Verificar el avance de las tareas pendientes</td>
-                    <td>2026-04-23</td>
-                    <td><span class="badge bg-warning text-dark">En progreso</span></td>
-                </tr>
-                <tr>
-                    <td>Quimica</td>
-                    <td>Preparar y enviar el reporte semanal</td>
-                    <td>2026-04-25</td>
-                    <td><span class="badge bg-success">Completado</span></td>
-                </tr>
-                <tr>
-                    <td>Historia</td>
-                    <td>Crear registro de tarea en el gestor</td>
-                    <td>2026-04-26</td>
-                    <td><span class="badge bg-secondary">Pendiente</span></td>
-                </tr>
-                <tr>
-                    <td>Español</td>
-                    <td>Preparar y enviar el reporte semanal</td>
-                    <td>2026-04-25</td>
-                    <td><span class="badge bg-success">Completado</span></td>
-                </tr>
-                <tr>
-                    <td>Geografia</td>
-                    <td>Preparar y enviar el reporte semanal</td>
-                    <td>2026-04-25</td>
-                    <td><span class="badge bg-success">Completado</span></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+<div class="table-responsive mb-4">
+  <table class="table table-bordered table-hover">
+    <thead class="table-light">
+      <tr>
+        <th>Tarea</th>
+        <th>Descripción</th>
+        <th>Fecha límite</th>
+        <th>Estado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="table-warning">
+        <td contenteditable="true">Matematicas</td>
+        <td contenteditable="true">Verificar el avance de las tareas pendientes</td>
+        <td contenteditable="true">2026-05-23</td>
+        <td>
+          <select class="form-select">
+            <option class="bg-secondary text-white">Sin iniciar</option>
+            <option class="bg-warning text-dark" selected>En proceso</option>
+            <option class="bg-success text-white">Completada</option>
+            <option class="bg-info text-dark">En revisión</option>
+            <option class="bg-danger text-white">Bloqueada</option>
+          </select>
+        </td>
+      </tr>
+      <tr class="table-success">
+        <td contenteditable="true">Quimica</td>
+        <td contenteditable="true">Preparar y enviar el reporte semanal</td>
+        <td contenteditable="true">2026-05-25</td>
+        <td>
+          <select class="form-select">
+            <option class="bg-secondary text-white">Sin iniciar</option>
+            <option class="bg-warning text-dark">En proceso</option>
+            <option class="bg-success text-white" selected>Completada</option>
+            <option class="bg-info text-dark">En revisión</option>
+            <option class="bg-danger text-white">Bloqueada</option>
+          </select>
+        </td>
+      </tr>
+      <tr class="table-secondary">
+        <td contenteditable="true">Historia</td>
+        <td contenteditable="true">Crear registro de tarea en el gestor</td>
+        <td contenteditable="true">2026-05-26</td>
+        <td>
+          <select class="form-select">
+            <option class="bg-secondary text-white" selected>Sin iniciar</option>
+            <option class="bg-warning text-dark">En proceso</option>
+            <option class="bg-success text-white">Completada</option>
+            <option class="bg-info text-dark">En revisión</option>
+            <option class="bg-danger text-white">Bloqueada</option>
+          </select>
+        </td>
+      </tr>
+      <tr class="table-success">
+        <td contenteditable="true">Español</td>
+        <td contenteditable="true">Preparar y enviar el reporte semanal</td>
+        <td contenteditable="true">2026-05-25</td>
+        <td>
+          <select class="form-select">
+            <option class="bg-secondary text-white">Sin iniciar</option>
+            <option class="bg-warning text-dark">En proceso</option>
+            <option class="bg-success text-white" selected>Completada</option>
+            <option class="bg-info text-dark">En revisión</option>
+            <option class="bg-danger text-white">Bloqueada</option>
+          </select>
+        </td>
+      </tr>
+      <tr class="table-success">
+        <td contenteditable="true">Geografia</td>
+        <td contenteditable="true">Preparar y enviar el reporte semanal</td>
+        <td contenteditable="true">2026-05-25</td>
+        <td>
+          <select class="form-select">
+            <option class="bg-secondary text-white">Sin iniciar</option>
+            <option class="bg-warning text-dark">En proceso</option>
+            <option class="bg-success text-white" selected>Completada</option>
+            <option class="bg-info text-dark">En revisión</option>
+            <option class="bg-danger text-white">Bloqueada</option>
+          </select>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
     <section>
         {%block contenido%} 
